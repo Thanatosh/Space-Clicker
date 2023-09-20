@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Space Clicker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="model-container">
+            <h1 id="planet-name">Moon</h1>
+            <div class="info-container">
+                <p id="power">Click power: <span id="power-span">1</span></p>
+                <p id="income">Income: <span id="income-span">0</span></p>
+            </div>
+            <p id="score-display">SCORE: <span id="score">0</span></p>
+            <img id="click-button" src="img/planet.gif" alt="Click Me!" draggable="false">
+            <div class="click-float" id="click-float">+1</div>
+        </div>
+        <div class="game-buttons">
+            <button id="buy-observer" class="basic-button">Buy Observer: <span class="button-span" id="observer-span">20</span></button>
+            <label for="buy-observer" class="button-labels">Click Power + 1</label>
+            <button id="buy-satellite" class="basic-button">Buy Satellite: <span class="button-span" id="satellite-span">200</span></button>
+            <label for="buy-satellite" class="button-labels">Click Power + 10</label><br>
+            <button id="buy-base" class="basic-button">Buy Base: <span class="button-span" id="base-span">40</span></button>
+            <label for="buy-base" class="button-labels">Income +1/sec</label>
+            <button id="buy-colony" class="basic-button">Buy Colony: <span class="button-span" id="colony-span">400</span></button>
+            <label for="buy-colony" class="button-labels">Income +10/sec</label><br>
+            <div id="planet-div">
+                <button id="upgrade-planet">Upgrade Planet: <span id="planet-span">4000</span></button>
+                <label for="upgrade-planet" id="planet-label">Click Power & Income x 2</label>
+            </div>
+        </div>
+    </div>
+    <div id="ending-screen" class="hidden">
+        <h2>Thank You for Playing!</h2>
+        <p>This is the end of the test demo.</p>
+        <a href="index.html">Play Again?</a>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
